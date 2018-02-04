@@ -1,0 +1,47 @@
+@import 'assets/styles/_global.scss';
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px 20px;
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.header {
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.column {
+    width: calc(50% - 5px);
+}
+
+.code {
+    border: 1px solid red;
+    background-color: #f9f9f9;
+}
+
+.footer {
+    text-align: center;
+}

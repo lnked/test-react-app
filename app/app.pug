@@ -1,0 +1,73 @@
+doctype html
+html(
+    lang='ru'
+    class='no-js'
+    itemscope='itemscope'
+    itemtype='http://schema.org/WebPage'
+)
+    //- appName=htmlWebpackPlugin.options.appName
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+        title React template
+
+        //- link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800", rel="stylesheet")
+
+        meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=5')
+
+        base(href='/')
+        meta(name='fragment', content='!')
+
+        meta(name='google', value='notranslate')
+        meta(name='mobile-web-app-capable', content='yes')
+
+        meta(itemprop='name', content='React template')
+
+        //- <!--Article Specific Metadata-->
+        meta(name='description', itemprop='description', content='')
+
+        meta(name='keywords', content='')
+        meta(name='robots', content='index,follow')
+        meta(name='author', content='Edik Bulikyan <ed.proff@gmail.com>')
+
+        //- <!--Open Graph Metadata-->
+        //- meta(property='og:type', content='website')
+        //- meta(property='og:title', content='')
+        //- meta(property='og:site_name', content='')
+        //- meta(property='og:description', content='')
+        //- meta(property='og:image', content='')
+        //- meta(property='og:image:width' content='1200')
+        //- meta(property='og:image:height' content='630')
+        //- meta(property='og:url', content='')
+        //- meta(property='og:email', content='')
+
+        //- <!--Twitter Card Metadata-->
+        //- meta(property='twitter:card', content='summary')
+        //- meta(property='twitter:url', content='')
+        //- meta(property='twitter:title', content='')
+        //- meta(property='twitter:description', content='')
+        //- meta(property='twitter:image:src', content='')
+        //- meta(property='twitter:site', content='@celebroru')
+
+        //- meta(property='fb:app_id', content='500712019984442')
+    body
+        include ./.cache/svgstore/svgstore.svg
+
+        main.layout-wrapper#root
+
+        noscript
+            .bulletin
+                p.headline MODERN BROWSER EXPERIENCE
+                p Your browser doesn't support the main features of this website.
+                p
+                    | Please upgrade to
+                    a(target='_blank', href='https://www.google.com/chrome/browser/desktop/index.html') Google Chrome
+                    | , Safari or Firefox for a better experience.
+
+        script.
+            window.prerenderReady = false
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js');
+            }

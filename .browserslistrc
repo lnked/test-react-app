@@ -1,0 +1,13 @@
+[production]
+> 1%
+safari >= 9
+last 2 Chrome versions
+last 2 Firefox versions
+ios_saf 9.0-9.2
+ie_mob 11
+Android >= 4
+edge 13
+ie >= 8
+
+[development]
+last 1 version
